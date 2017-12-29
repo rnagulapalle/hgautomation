@@ -63,6 +63,7 @@ WebDriver driver;
 	
 	@AfterTest
 	public void afterTest() {
+		//close all window
 		driver.quit();
 	}
 	
