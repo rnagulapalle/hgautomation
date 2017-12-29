@@ -48,6 +48,9 @@ WebDriver driver;
 		//Assert.assertEquals(getTitle, "Google");
 	    driver.findElement(By.id("ContactNote")).sendKeys(txtNotes);
 	    driver.findElement(By.xpath("//input[@type='submit']")).click();
+	    driver.findElement(By.xpath("//span[@class='name']")).click();
+	    driver.findElement(By.linkText("Logout")).click();
+	    Thread.sleep(2000);
 		}
 //	}
 	
